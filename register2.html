@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register2 Form</title>
+    <style media="screen">
+      *,
+  *:before,
+  *:after{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  body{
+    background-color:#010710 ;
+  }
+  .background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+  }
+form{
+    width:500px ;
+    height: 550px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    font-size: 26px;
+}
+.background .shape{
+   width: 200px ;
+   height: 200px;
+   position: absolute;
+   border-radius:50% ;
+}
+     .shape:first-child{
+    background: linear-gradient(
+        #ffe600,
+        #f1ebb9
+    );
+   left: -100px;
+   top: -104px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #fd5000,
+        #fcc5ab
+    );
+    right: -90px;
+    bottom: -80px;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+.qualification{
+    color: #ffffff;
+    background-color: #031736;
+}
+form *{
+    font-family:'Poppins',sans-serif ;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+label{
+    display: block;
+    margin-top:30px ;
+    font-size: 20px;
+    font-weight: 500;
+}
+.input1{
+    display: block;
+    height: 50px;
+    width: 85%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #ffffff;
+    font-size: 20px;
+}
+button{
+   margin-top: 50px;
+    width: 30%;
+    background-color:rgb(34, 250, 250);
+    color: #080710;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hov2:hover{
+   background-color:rgba(0, 216, 216, 0.845);
+}
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        </div>
+        <form action="register3.html">
+            <h3> Educational Details</h3>
+            <label for="qualification">Plz select your Qualification</label>
+            <select name="qualification" id="qualification" required>
+                <option value="10th Pass" class="qualification">10<sup>th</sup>Pass</option>
+                <option value="12th Pass" class="qualification">12<sup>th</sup>Pass</option> 
+                <option value="Enginering" class="qualification">Enginering</option>
+                <option value="Diploma" class="qualification">Diploma</option>         
+            </select>
+            <label for="collage"> Collage</label>
+            <input class="input1" type="text" name="collage" id="collage" placeholder="Name of your collage" required>
+            <label for="graduate">Date of Graduate</label>
+            <input type="date" name="graduate" id="graduate" placeholder="Enter your date of graduation" required>
+            <br><br>
+            <button class="hov2">Next</button>                            
+        </form>
+</body>
+</html>

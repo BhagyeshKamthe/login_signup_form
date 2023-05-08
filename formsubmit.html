@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title> Submit Form</title>
+       <style media="screen">
+        *,
+        *::before,
+   *::after{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+   }
+  body{
+  background-color: #010710;
+  }
+  .background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+  }
+  .background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .shape:first-child{
+    background: linear-gradient(
+        #ffe600,
+        #f1ebb9
+    );
+   left: -280px;
+   top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #fd5000,
+        #fcc5a2
+    );
+    right: -280px;
+    bottom: -80px;
+}
+form{
+    width:850px ;
+    height: 550px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    font-size: 26px;
+}
+form *{
+    font-family:'Poppins',sans-serif ;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+}
+.thanks{
+    text-align: center;
+}
+.submission{
+    text-align: center;
+}
+button{
+    margin-top: 50px;
+    width: 22%;
+    background-color: #0648fb;
+    color: #080710;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hov:hover{
+    background-color: rgb(240, 48, 48);
+}
+       </style>
+</head>
+<body>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form action="loginform.html">
+          <h1 class="thanks">*Thank You*</h1><br><br>
+          <h2 class="submission">Your Form has been Submitted.</h2>
+          <button class="hov">Home</button>
+    </form>
+</body>
+</html>
